@@ -9,8 +9,8 @@ from __future__ import annotations
 
 import numpy as np
 
-RED, GREEN, GREY, INK = "#CC0033", "#2E7D32", "#BBBBBB", "#1F2328"
-DEPT_COLORS = ["#CC0033", "#1A56B0", "#2E7D32", "#E08A00", "#7B3FB2", "#00838F", "#6D4C41"]
+RED, GREEN, GREY, INK = "#CC0033", "#1F8A7A", "#C3CAD5", "#14213D"
+DEPT_COLORS = ["#CC0033", "#2F5DA8", "#1F8A7A", "#E9A23B", "#7B4FA8", "#14213D", "#9A6B4F"]
 FONT = dict(family="Inter, system-ui, sans-serif", size=12, color=INK)
 
 
@@ -30,10 +30,10 @@ def L(x):
 
 def layout(title="", xtitle="", ytitle="", height=360, **kw):
     lay = dict(title=dict(text=title, x=0.01, font=dict(size=15)), height=height,
-               font=FONT, paper_bgcolor="white", plot_bgcolor="white",
+               font=FONT, paper_bgcolor="white", plot_bgcolor="white", bargap=0.15,
                margin=dict(t=50 if title else 20, b=50, l=10, r=10),
-               xaxis=dict(title=dict(text=xtitle), gridcolor="#EEE", zeroline=False, automargin=True),
-               yaxis=dict(title=dict(text=ytitle), gridcolor="#EEE", zeroline=False, automargin=True),
+               xaxis=dict(title=dict(text=xtitle), gridcolor="#E9EDF2", zeroline=False, automargin=True),
+               yaxis=dict(title=dict(text=ytitle), gridcolor="#E9EDF2", zeroline=False, automargin=True),
                legend=dict(orientation="h", yanchor="bottom", y=1.0, x=1, xanchor="right"),
                shapes=[], annotations=[])
     lay.update(kw)

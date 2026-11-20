@@ -16,7 +16,7 @@ import charts as G
 import config as C
 import stats_engine as S
 
-RED, GREEN = "#CC0033", "#2E7D32"
+RED, GREEN = "#CC0033", "#1F8A7A"
 CMAP = {"Under Stress": RED, "Stress-Free": GREEN}
 
 

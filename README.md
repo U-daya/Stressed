@@ -1,7 +1,7 @@
 # RU Stressed?: IE 320 Group 12 (Vercel version)
 
 Web application for the IE 320 Engineering Statistics group project *"What Makes People Stressed?"*
-(Project + Exam II option). Team: **Udaya Raja (leader)**, Dhruv Nagpal, Akshita Krishnakumar, Poorvi Shekar.
+(Project + Exam II option).
 
 | Page | What it does |
 |---|---|

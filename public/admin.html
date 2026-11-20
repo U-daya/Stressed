@@ -1,14 +1,14 @@
 <!doctype html>
-<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
-<title>Team / Admin · RU Stressed?</title><link rel="stylesheet" href="/style.css"><link rel="icon" href="/favicon.svg" type="image/svg+xml"></head>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="theme-color" content="#14213D"><meta name="description" content="RU Stressed? A one-minute anonymous survey on Rutgers student stress, with your score at the end.">
+<title>Team · RU Stressed?</title><link rel="preload" href="/fonts/bricolage-grotesque.woff2" as="font" type="font/woff2" crossorigin><link rel="stylesheet" href="/style.css"><link rel="icon" href="/favicon.svg" type="image/svg+xml"></head>
 <body><main class="narrow">
-<h1>Team / Admin</h1>
-<p class="sub">Download every stored response as a CSV for the report (open it in Excel, or run
-<code>report_analysis.py</code> on it).</p>
+<h1>Team</h1>
+<p class="lede">Download every response as a spreadsheet file (CSV). Open it in Excel, or run
+<code>report_analysis.py</code> on it to make the report figures.</p>
 <form id="af" class="card">
-  <label for="pw"><b>Team password</b></label><br>
-  <input type="password" id="pw" name="pw" autocomplete="current-password" style="margin:10px 0 14px">
-  <button class="primary" type="submit">Download dataset (CSV)</button>
+  <label for="pw"><b>Team password</b></label>
+  <div style="margin:10px 0 16px"><input type="password" id="pw" name="pw" autocomplete="current-password" required></div>
+  <button class="primary" type="submit">Download responses</button>
   <div id="amsg"></div>
 </form>
 </main>
