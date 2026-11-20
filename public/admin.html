@@ -1,0 +1,15 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Team / Admin · RU Stressed?</title><link rel="stylesheet" href="/style.css"><link rel="icon" href="/favicon.svg" type="image/svg+xml"></head>
+<body><main class="narrow">
+<h1>Team / Admin</h1>
+<p class="sub">Download every stored response as a CSV for the report (open it in Excel, or run
+<code>report_analysis.py</code> on it).</p>
+<form id="af" class="card">
+  <label for="pw"><b>Team password</b></label><br>
+  <input type="password" id="pw" name="pw" autocomplete="current-password" style="margin:10px 0 14px">
+  <button class="primary" type="submit">Download dataset (CSV)</button>
+  <div id="amsg"></div>
+</form>
+</main>
+<script src="/app.js"></script><script>adminPage();</script></body></html>

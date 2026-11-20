@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Methodology · RU Stressed?</title><link rel="stylesheet" href="/style.css"><link rel="icon" href="/favicon.svg" type="image/svg+xml"></head>
+<body><main>
+<h1>Methodology</h1>
+<p class="sub">How the data are collected, how stress is classified, and which statistical methods answer each research question.</p>
+
+<h2>The 10-question questionnaire</h2>
+<div class="tablewrap" id="qtable"><div class="loading">Loading…</div></div>
+
+<h2>Stress classification rule</h2>
+<div class="card">
+<ol>
+<li><b>Stress Index (SI)</b>: each stress item is rescaled to 0–1 and the two are averaged:<br>
+<code>SI = 100 × [ (Q2 − 1)/9 + (Q3 − 1)/4 ] / 2</code> &nbsp;(0 = lowest, 100 = highest)</li>
+<li><b>Under Stress</b> if SI ≥ 50; otherwise <b>Stress-Free</b>.</li>
+<li><b>Why 50?</b> 50 is where both answers sit at the middle of their scales, so SI ≥ 50 means the
+student's answers lean toward the stressed end on balance. Using two items (an overall rating and a
+frequency of feeling overwhelmed) makes the classification less sensitive to how one person interprets
+a single 1–10 scale.</li>
+</ol>
+</div>
+
+<h2>Statistical methods (α = 0.05)</h2>
+<div class="tablewrap"><table>
+<thead><tr><th>Research question</th><th style="text-align:left">Method</th><th style="text-align:left">Why this method</th></tr></thead>
+<tbody style="white-space:normal">
+<tr><td>RQ1 Overall stress</td><td style="white-space:normal;text-align:left">Point estimates; t-CI for μ; χ²-CI for σ²; one-sample t test; z-CI and z test for the proportion Under Stress</td><td style="white-space:normal;text-align:left">σ unknown so t; n is large so the proportion is approximately normal</td></tr>
+<tr><td>RQ2, RQ5 Departments</td><td style="white-space:normal;text-align:left">Single-factor ANOVA, Tukey HSD, Bartlett/Levene, Kruskal–Wallis, χ² test of independence</td><td style="white-space:normal;text-align:left">Compares more than two means without inflating Type I error; checks assumptions</td></tr>
+<tr><td>RQ3 Factors</td><td style="white-space:normal;text-align:left">Correlation t tests; multiple linear regression (F test, coefficient t tests, standardized β, residual plots, VIF)</td><td style="white-space:normal;text-align:left">Measures each factor's effect while holding the others constant</td></tr>
+<tr><td>RQ4 Factors by department</td><td style="white-space:normal;text-align:left">Partial F test of department-specific slopes; within-department correlations and regressions; ANOVA on each factor</td><td style="white-space:normal;text-align:left">Tests directly whether factor effects change across departments</td></tr>
+<tr><td>RQ6 Conclusions</td><td style="white-space:normal;text-align:left">Built from the tests above</td><td></td></tr>
+</tbody></table></div>
+
+<h2>Limitations</h2>
+<p>Convenience (non-random) sample; self-reported, one-time answers; association is not causation;
+departments may be unbalanced; possible duplicate submissions because the survey is anonymous.</p>
+</main>
+<script src="/app.js"></script><script>methodologyPage();</script></body></html>

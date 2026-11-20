@@ -1,0 +1,6 @@
+# Only needed on your own computer (not deployed to Vercel)
+-r requirements.txt
+matplotlib>=3.9      # report_analysis.py figures
+tabulate>=0.9        # report_analysis.py tables
+statsmodels>=0.14    # tests/check_against_statsmodels.py
+uvicorn>=0.30        # dev_server.py

@@ -1,0 +1,6 @@
+.env*
+.vercel/
+data/
+report_output/
+__pycache__/
+node_modules/
